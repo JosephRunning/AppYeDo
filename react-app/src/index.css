@@ -1,0 +1,429 @@
+/* Hex codes: #962E2A, #E3867D, #CEE6F2 */
+body{
+  font-family: Arial;
+  margin: 0;
+  background-color: #CEE6F2;
+}
+
+.header{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  background: #E3867D;
+  color: #101820;
+  padding: 15px 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+  height: 120px;
+}
+.header h1{
+  padding: 30px 60px;
+  
+  font-size: 50px;
+}
+
+.header hr{
+  border: 2px solid #962E2A;
+}
+
+.header a{
+  font-size: 20px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 60px;
+  text-decoration: none;
+  border: #007bff;
+  border-radius: 5px;
+  background-color: #962e2a2a; 
+}
+
+.header a:hover {
+  background-color: #CEE6F2;
+  color: black;
+  
+}
+
+
+/*For TODO list*/
+
+.to-do-list{
+  width: 100%;
+  float: left;
+  
+  background-color: #E3867D;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+  position: sticky;
+  
+}
+.TypeTask{
+  font-size: 20px;
+}
+
+.toDoList-card{
+  font-size: 22px;
+  border: 2px solid #E3867D;
+  margin: 5px;
+  padding: 2px;
+  background-color: rgb(138, 138, 190);
+  text-align: left;      
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  border: 1px solid #962e2a93;
+  overflow-wrap: break-word; 
+}
+
+.sidenav{
+  width: 300px;
+  background-color: #E3867D;
+  color: black;
+  position: absolute;
+  min-height: 95vh;
+  padding: 0 30px;
+  left: -100%;
+  transition: all 0.3s;
+  border: 2px solid #962e2a93;
+  
+}
+.sidenav li{
+  list-style-type: decimal;
+}
+.sidenav.active{
+  left: 0;
+}
+ul{
+  padding: 0;
+}
+ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+li{
+  list-style-type: none;
+}
+ul li a:hover, ul li a.active{
+  background-color: #665;
+}
+
+.foldUp{
+  background-color: #ffffff;
+  width: 50px;
+}
+.add-button{
+  background-color: hsl(125,47%, 54%);
+  padding: 10px, 20px;
+  font-size: 25px;
+  
+  border-radius: 5px;
+}
+.add-button:hover{
+  background-color: hsl(108, 100%, 50%);
+  
+}
+.delete-button{
+  background-color: hsl(7, 47%, 54%);
+  padding: 10px, 20px;
+  font-size: 15px;
+  float: right;
+}
+.delete-button:hover{
+  background-color: hsl(0, 100%, 61%);
+}
+.slash-button{
+  background-color: hsl(226, 47%, 54%);
+  padding: 10px, 20px;
+  font-size: 15px;
+  float: right;
+}
+.slash-button:hover{
+  background-color: hsl(239, 97%, 57%);
+}
+
+
+.toggleDiv {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+}
+
+.toggleDiv.open {
+  max-height: 200px;
+  padding: 10px;
+}
+
+
+/*For DigitalClock list */
+
+
+.clock-container{
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding:10px 0;
+}
+.clock{
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5xp black;
+}
+
+
+/*
+Main pages for choosing entries and projects
+*/
+.MainProject{ 
+  width: 97%;
+  float: right;
+  background-color: rgb(138, 138, 190);
+  text-align: center;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+.MainProject2{
+  width: 97%;
+  float: right;
+  background-color: #E3867D;
+  text-align: center;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+.leftProject{
+  float: left;
+  width: 2%;
+  background-color: rgb(124, 75, 75);
+}
+.ContextProject{
+  padding-left: 150px;
+  padding-right: 150px;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.project-card{
+  background-color: #007bff54;
+  border: 2px solid #007bff54;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.project-card a{
+  color: black;
+  padding: 10px;
+}
+
+.project-card p{
+  min-height: 50px;
+  font-size: 20px;
+}
+
+.entry-card{
+  background-color: #E3867D;
+  border: 2px solid #007bff54;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+.entry-card img{
+  min-width: 200px;
+  height: auto;
+}
+.entry-card p{
+  min-height: 50px;
+  font-size: 20px;
+
+}
+
+/* For inputs textareas etc.*/
+.newProject-card{
+  width: 97%;
+  float: right;
+  padding-left: 150px;
+  padding-right: 150px;
+  align-items: center;
+  text-align: center;
+  background-color: #E3867D;
+  
+  font-size: 30px;
+}
+
+.newProject-card input{
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+.newProject-card textarea{
+  width: 80%; 
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  resize: vertical; 
+  box-sizing: border-box; 
+}
+
+.newProject-card button{
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #be504de5;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newProject-card hr{
+  border: 1px solid #e27470;
+  margin: 10px;
+}
+
+
+h1, h2, h3, h4 {
+  display: inline-block;
+  margin: 0; 
+}
+
+
+.insertEntry-card{
+  width: 97%;
+  float: right;
+  padding-left: 150px;
+  padding-right: 150px;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(138, 138, 190);
+
+  font-size: 30px;
+}
+.insertEntry-card input{
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.insertEntry-card textarea{
+  width: 80%; 
+  padding: 10px; 
+  font-size: 1rem; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  resize: vertical; 
+  box-sizing: border-box; 
+}
+.insertEntry-card button{
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #be504de5;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.insertEntry-card hr{
+  border: 1px solid rgb(129, 129, 212);
+  margin: 10px;
+}
+
+/*
+CSS for login page 
+*/
+
+/**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.LoginBody {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #962E2A;
+  
+}
+.logo{
+text-align: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+
+}
+.LoginContainer {
+  text-align: left;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  background-color: #E3867D;
+}
+
+.LoginContainer h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.FormGroup {
+  margin-bottom: 1rem;
+}
+
+.FormGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.FormGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+background-color: #CEE6F2;
+}
+
+.FormGroup input:focus {
+  border-color: #962E2A;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+.LoginBTN {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #962E2A;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #303033;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
