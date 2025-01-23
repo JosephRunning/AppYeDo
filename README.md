@@ -29,7 +29,12 @@ INSERT INTO `groups` (`groupId`, `name`, `project_id`) VALUES ('1', 'test_group'
 INSERT INTO `users` (`email`, `passwords`, `group_id`) VALUES ('asd@asd.com', 'asd', '1');
 ```
 To make more groups and users you need to make them directly in sql.
-
+<br>
+<br>
+After all that to use application pls go to:
+```
+http://localhost:5173/
+```
 
 
 
