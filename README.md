@@ -1,5 +1,6 @@
 ## **YeDo is a simple web application for adding and managing projects.** <br>
 ### App is written using mainly react.js for frontend, node.js for backend and mySQL as database
+*Please install node.js and npm* <br>
 To install this aplication go to folder and do:<br>
 ```
 git clone https://github.com/JosephRunning/AppYeDo.git
