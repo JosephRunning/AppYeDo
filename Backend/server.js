@@ -14,12 +14,12 @@ app.use(cors());
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
-//connecting to database
+//connecting to database change if needed
 const db = mysql.createConnection({
     host: "localhost",
     user: 'root',
     password: '',
-    database: 'yedo'
+    database: 'tojesttest' //DB Name
 })
 
 //For Login
@@ -121,9 +121,6 @@ app.get("/chooseProject", (req, res) => {
                 return res.status(500).json({ success: false, message: "Database error" });
             }
 
-            if (result.length === 0) {
-                return res.status(404).json({ success: false, message: "No projects found for the user" });
-            }
 
             const projects = result.map(project => ({
                 ...project,
