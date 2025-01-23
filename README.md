@@ -23,6 +23,7 @@ npm run dev
 Start your database. I was using mySQL. <br>
 Simple SQL structure will be in SQL.txt file which you can copy into your database
 To login in application pls make a group and a user with that group. <br>
+*remember to change database name in Backend/script.js*<br>
 Example SQL query for that:
 ```
 INSERT INTO `groups` (`groupId`, `name`, `project_id`) VALUES ('1', 'test_group', '1');
