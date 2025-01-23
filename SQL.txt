@@ -1,0 +1,41 @@
+CREATE TABLE `groups` (
+    groupId INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) UNIQUE NOT NULL,
+    project_id INT NOT NULL
+);
+CREATE TABLE projects (
+    ProjectId INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    createTime varchar(255),
+    description TEXT,
+    group_Id INT NULL,
+    FOREIGN KEY (group_Id) REFERENCES `groups`(groupId) 
+);
+
+CREATE TABLE entries(
+    entryId INT AUTO_INCREMENT PRIMARY KEY,
+    title varchar(255),
+    entryHour varchar(255) NOT NULL,
+    description TEXT,
+    image LONGBLOB,
+    project_Id int NOT NULL,
+    FOREIGN KEY (project_Id) REFERENCES projects(ProjectId) 
+);
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    surname VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    passwords VARCHAR(255) NOT NULL,
+    group_id INT NOT NULL,
+    FOREIGN KEY (group_id) REFERENCES `groups`(groupId)
+);
+
+CREATE TABLE ToDoListEntry (
+    toDoListEntryID INT AUTO_INCREMENT PRIMARY KEY,
+    entryContent varchar(255) NOT NULL,      
+    project_id int,
+    isSlash boolean,              
+    FOREIGN KEY (project_id) REFERENCES projects(ProjectId)
+);
